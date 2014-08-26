@@ -218,6 +218,8 @@ typedef void (^MBProgressHUDCompletionBlock)();
  */
 - (void)hide:(BOOL)animated afterDelay:(NSTimeInterval)delay;
 
+- (void)hide:(BOOL)animated afterDelay:(NSTimeInterval)delay withCompletionBlock:(MBProgressHUDCompletionBlock)block;
+
 /** 
  * Shows the HUD while a background task is executing in a new thread, then hides the HUD.
  *
